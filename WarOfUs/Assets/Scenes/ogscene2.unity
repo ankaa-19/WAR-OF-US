@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 278275002}
   - component: {fileID: 278275004}
   - component: {fileID: 278275003}
+  - component: {fileID: 278275005}
   m_Layer: 0
-  m_Name: p1name
+  m_Name: ponename
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,6 +206,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278275001}
   m_CullTransparentMesh: 0
+--- !u!114 &278275005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278275001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871971a3e43f674e804edd78b5f0682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterponename: {fileID: 0}
 --- !u!1 &288863182
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +864,7 @@ GameObject:
   - component: {fileID: 460272201}
   - component: {fileID: 460272200}
   m_Layer: 0
-  m_Name: enterp2name
+  m_Name: enterptwoname
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1200,7 +1214,7 @@ GameObject:
   - component: {fileID: 942542875}
   - component: {fileID: 942542874}
   m_Layer: 0
-  m_Name: p2name
+  m_Name: ptwoname
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1439,8 +1453,9 @@ GameObject:
   - component: {fileID: 972008150}
   - component: {fileID: 972008149}
   - component: {fileID: 972008148}
+  - component: {fileID: 972008151}
   m_Layer: 0
-  m_Name: enterp1name
+  m_Name: enterponename
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1528,7 +1543,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1177580997}
+        m_TargetAssemblyTypeName: displaytext, Assembly-CSharp
+        m_MethodName: rdnamep1
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -1603,6 +1630,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972008146}
   m_CullTransparentMesh: 1
+--- !u!114 &972008151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972008146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871971a3e43f674e804edd78b5f0682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterponename: {fileID: 0}
 --- !u!1 &1036197869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1177580996}
+  - component: {fileID: 1177580997}
   m_Layer: 0
   m_Name: game control
   m_TagString: Untagged
@@ -1786,6 +1827,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1177580997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177580995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871971a3e43f674e804edd78b5f0682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterponename: {fileID: 0}
 --- !u!1 &1311405288
 GameObject:
   m_ObjectHideFlags: 0
