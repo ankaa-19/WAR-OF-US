@@ -11,4 +11,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ogscene2.unity
     guid: 6ce11a2d2425a5e4f82920e0bed4835e
+  - enabled: 1
+    path: Assets/Scenes/p1 hp.unity
+    guid: eb5249ad15ac45a45b71027e4681d290
+  - enabled: 1
+    path: Assets/Scenes/p1 hk.unity
+    guid: 9639477bbab8c3a4588189d1c40d95d6
+  - enabled: 1
+    path: Assets/Scenes/p1 lp.unity
+    guid: d46802130541f2d4eb24a8baa0b585a0
+  - enabled: 1
+    path: Assets/Scenes/p1 lk.unity
+    guid: a3d101997ddc1a04dbd933a7f7b0c37c
+  - enabled: 1
+    path: Assets/Scenes/p1 s.unity
+    guid: 8e49057dbe3119d4a9b02b3e45d78024
+  - enabled: 1
+    path: Assets/Scenes/p2 hp.unity
+    guid: 923a44ff961d3b0409128727f07f30c5
+  - enabled: 1
+    path: Assets/Scenes/p2 hk.unity
+    guid: c4267710e98acea4bb481158be179c3f
+  - enabled: 1
+    path: Assets/Scenes/p2 lp.unity
+    guid: 6bd99e79b4711ac41abd082fd623a1ea
+  - enabled: 1
+    path: Assets/Scenes/p2 lk.unity
+    guid: 169cd1dc58407b74fa75edea24566ce7
+  - enabled: 1
+    path: Assets/Scenes/p2 s.unity
+    guid: b4b17e1e64de9664081e59fe902f4892
   m_configObjects: {}
