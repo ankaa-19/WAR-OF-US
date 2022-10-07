@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ogscene2.unity
     guid: 6ce11a2d2425a5e4f82920e0bed4835e
   - enabled: 1
+    path: Assets/Scenes/suntukan p1.unity
+    guid: a5e7c84c1b009f94a8e129d44da257c0
+  - enabled: 1
     path: Assets/Scenes/p1 hp.unity
     guid: eb5249ad15ac45a45b71027e4681d290
   - enabled: 1
