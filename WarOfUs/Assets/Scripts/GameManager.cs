@@ -35,4 +35,30 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
+
+    
+    public void p2hp()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public void p2hk()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void p2lp()
+    {
+        SceneManager.LoadScene(9);
+    }
+
+    public void p2lk()
+    {
+        SceneManager.LoadScene(10);
+    }
+
+    public void p2s()
+    {
+        SceneManager.LoadScene(11);
+    }
 }
