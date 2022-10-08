@@ -17,6 +17,13 @@ public class GameManager : MonoBehaviour
     public GameObject allfunctions;
 
 
+    private void Awake()
+    {
+        p1health = PlayerPrefs.GetFloat("p1h");
+        p2health = PlayerPrefs.GetFloat("p2h");
+        
+    }
+
     private void Start()
     {  
         p1max = p1health;
@@ -32,7 +39,7 @@ public class GameManager : MonoBehaviour
     public void p1hp()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 55)
         {
             SceneManager.LoadScene(3);
         }
@@ -40,13 +47,15 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(15);
         }
-        
+        if (P1HP <= 0){ 
+            SceneManager.LoadScene(25);   
+        }
     }
 
     public void p1hk()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 45)
         {
             SceneManager.LoadScene(4);
         }
@@ -59,7 +68,7 @@ public class GameManager : MonoBehaviour
     public void p1lp()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 75)
         {
             SceneManager.LoadScene(5);
         }
@@ -72,7 +81,7 @@ public class GameManager : MonoBehaviour
     public void p1lk()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 65)
         {
             SceneManager.LoadScene(6);
         }
@@ -90,7 +99,7 @@ public class GameManager : MonoBehaviour
     public void p2hp()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 55)
         {
             SceneManager.LoadScene(8);
         }
@@ -103,7 +112,7 @@ public class GameManager : MonoBehaviour
     public void p2hk()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 45)
         {
             SceneManager.LoadScene(9);
         }
@@ -116,7 +125,7 @@ public class GameManager : MonoBehaviour
     public void p2lp()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 75)
         {
             SceneManager.LoadScene(10);
         }
@@ -129,7 +138,7 @@ public class GameManager : MonoBehaviour
     public void p2lk()
     {
         rand = Random.Range(0,100);   
-        if (rand <= 50)
+        if (rand <= 65)
         {
             SceneManager.LoadScene(11);
         }

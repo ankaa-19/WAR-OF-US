@@ -4,15 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class change : MonoBehaviour
+public class retry : MonoBehaviour
 {
-    
-    
-    public void PlayGame()
+    public void RetryGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(0);
     }
-    public void QuitGame()
+    public void ExitGame()
     {
         Application.Quit();
     }

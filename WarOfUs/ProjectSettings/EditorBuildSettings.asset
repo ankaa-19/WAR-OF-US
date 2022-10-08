@@ -44,4 +44,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/p2 s.unity
     guid: b4b17e1e64de9664081e59fe902f4892
+  - enabled: 1
+    path: Assets/Scenes/p1 hk miss.unity
+    guid: eb2f634569b57d44992743d8159e61e4
+  - enabled: 1
+    path: Assets/Scenes/p1 lk miss.unity
+    guid: b4b86a8ec2b65294a8f5d187db87d9b8
+  - enabled: 1
+    path: Assets/Scenes/p1 hp miss.unity
+    guid: c12a708f98461054b839b43513ddc8b0
+  - enabled: 1
+    path: Assets/Scenes/p1 lp miss.unity
+    guid: f0ccbdf502dc7494c8b010525d4dc88f
+  - enabled: 1
+    path: Assets/Scenes/p2 hk miss.unity
+    guid: d887bd2eeeb1eda489b6a49ef3741940
+  - enabled: 1
+    path: Assets/Scenes/p2 lk miss.unity
+    guid: 4d107e7987b223e4abec83ab5d8e7dff
+  - enabled: 1
+    path: Assets/Scenes/p2 hp miss.unity
+    guid: fe0e599ee2a77604d9e5fca5f1eaf3ff
+  - enabled: 1
+    path: Assets/Scenes/p2 lp miss.unity
+    guid: aec456cc2697e554c9ba55fd6adfefb1
+  - enabled: 1
+    path: Assets/Scenes/ENDING.unity
+    guid: b136deaf308c3544596c83693a26850a
   m_configObjects: {}
