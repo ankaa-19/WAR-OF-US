@@ -21,44 +21,65 @@ public class GameManager : MonoBehaviour
     {  
         p1max = p1health;
         p2max = p2health; 
-        DontDestroyOnLoad(allfunctions.gameObject);
     }
 
     private void Update()
     {
         Healthbar1.fillAmount = p1health / p1max;
         Healthbar2.fillAmount = p2health / p2max;
-
-    }
-
-    private void FixedUpdate()
-    {
-        gametime -= Time.deltaTime;
-    }
-
-    IEnumerator delayedchangescene()
-    {
-        yield return new WaitForSeconds(5f);
     }
 
     public void p1hp()
     {
-        SceneManager.LoadScene(3);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else
+        {
+            SceneManager.LoadScene(15);
+        }
+        
     }
 
     public void p1hk()
     {
-        SceneManager.LoadScene(4);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(4);
+        }
+        else
+        {
+        SceneManager.LoadScene(17);
+        }
     }
 
     public void p1lp()
     {
-        SceneManager.LoadScene(5);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(5);
+        }
+        else
+        {
+        SceneManager.LoadScene(16);
+        }
     }
 
     public void p1lk()
     {
-        SceneManager.LoadScene(6);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(6);
+        }
+        else
+        {
+        SceneManager.LoadScene(14);
+        }
     }
 
     public void p1s()
@@ -66,25 +87,56 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(7);
     }
 
-
     public void p2hp()
     {
-        SceneManager.LoadScene(8);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(8);
+        }
+        else
+        {
+        SceneManager.LoadScene(19);
+        }
     }
 
     public void p2hk()
     {
-        SceneManager.LoadScene(9);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(9);
+        }
+        else
+        {
+        SceneManager.LoadScene(17);
+        }
     }
 
     public void p2lp()
     {
-        SceneManager.LoadScene(10);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(10);
+        }
+        else
+        {
+        SceneManager.LoadScene(20);
+        }
     }
 
     public void p2lk()
     {
-        SceneManager.LoadScene(11);
+        rand = Random.Range(0,100);   
+        if (rand <= 50)
+        {
+            SceneManager.LoadScene(11);
+        }
+        else
+        {
+        SceneManager.LoadScene(18);
+        }
     }
 
     public void p2s()
