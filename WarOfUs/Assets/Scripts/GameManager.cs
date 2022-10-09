@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public float p1health;
     public float p2health;
-    public float p2max;
     public float p1max;
+    public float p2max;
     public float gametime = 60f;
     public int rand;
     public Image Healthbar1;
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(15);
         }
-        if (P1HP <= 0){ 
+        if (p1health <= 0){ 
             SceneManager.LoadScene(25);   
         }
     }
