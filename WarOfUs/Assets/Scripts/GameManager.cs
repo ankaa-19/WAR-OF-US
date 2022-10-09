@@ -8,32 +8,42 @@ public class GameManager : MonoBehaviour
 {
     public float p1health;
     public float p2health;
+    public float special1 = 0f;
+    public float special2 = 0f;
     public float p1max;
     public float p2max;
-    public float gametime = 60f;
     public int rand;
-    public Image Healthbar1;
-    public Image Healthbar2;
-    public GameObject allfunctions;
 
-
-    private void Awake()
-    {
-        p1health = PlayerPrefs.GetFloat("p1h");
-        p2health = PlayerPrefs.GetFloat("p2h");
-        
-    }
 
     private void Start()
     {  
-        p1max = p1health;
-        p2max = p2health; 
+        p1health = PlayerPrefs.GetFloat("p1hp");
+        p2health = PlayerPrefs.GetFloat("p2hp");
+        p1max = PlayerPrefs.GetFloat("p1m");
+        p2max = PlayerPrefs.GetFloat("p2m");
+        healthcheck();
     }
 
     private void Update()
     {
-        Healthbar1.fillAmount = p1health / p1max;
-        Healthbar2.fillAmount = p2health / p2max;
+        PlayerPrefs.SetFloat("p1hn", p1health);
+        PlayerPrefs.SetFloat("p2hn", p2health);
+        PlayerPrefs.SetFloat("p1max", p1max);
+        PlayerPrefs.SetFloat("p2max", p2max);
+    }
+
+
+    public void healthcheck()
+    {
+        if (p1health < 1f)
+        {
+            SceneManager.LoadScene(24);
+        }
+        if (p2health < 1f)
+        {
+            SceneManager.LoadScene(23);
+        }
+
     }
 
     public void p1hp()
@@ -42,13 +52,11 @@ public class GameManager : MonoBehaviour
         if (rand <= 55)
         {
             SceneManager.LoadScene(3);
+            p2health -= 8f;
         }
         else
         {
             SceneManager.LoadScene(15);
-        }
-        if (p1health <= 0){ 
-            SceneManager.LoadScene(25);   
         }
     }
 
@@ -58,10 +66,11 @@ public class GameManager : MonoBehaviour
         if (rand <= 45)
         {
             SceneManager.LoadScene(4);
+            p2health -= 12f;
         }
         else
         {
-        SceneManager.LoadScene(17);
+        SceneManager.LoadScene(13);
         }
     }
 
@@ -71,6 +80,7 @@ public class GameManager : MonoBehaviour
         if (rand <= 75)
         {
             SceneManager.LoadScene(5);
+            p2health -= 3f;
         }
         else
         {
@@ -84,6 +94,7 @@ public class GameManager : MonoBehaviour
         if (rand <= 65)
         {
             SceneManager.LoadScene(6);
+            p1health -= 6f;
         }
         else
         {
@@ -93,7 +104,16 @@ public class GameManager : MonoBehaviour
 
     public void p1s()
     {
+        if(special1 >=1 )
+        {
+        if(p1health <=30)
+        {
         SceneManager.LoadScene(7);
+        p2health -= 25f;
+        special1 += 1f;
+        }
+        }
+
     }
 
     public void p2hp()
@@ -102,6 +122,7 @@ public class GameManager : MonoBehaviour
         if (rand <= 55)
         {
             SceneManager.LoadScene(8);
+            p1health -= 6f;
         }
         else
         {
@@ -115,6 +136,7 @@ public class GameManager : MonoBehaviour
         if (rand <= 45)
         {
             SceneManager.LoadScene(9);
+            p1health -= 12f;
         }
         else
         {
@@ -128,6 +150,7 @@ public class GameManager : MonoBehaviour
         if (rand <= 75)
         {
             SceneManager.LoadScene(10);
+            p1health -= 3f;
         }
         else
         {
@@ -141,6 +164,7 @@ public class GameManager : MonoBehaviour
         if (rand <= 65)
         {
             SceneManager.LoadScene(11);
+            p1health -= 6f;
         }
         else
         {
@@ -150,6 +174,14 @@ public class GameManager : MonoBehaviour
 
     public void p2s()
     {
+        if(special2 >= 1)
+        {
+        if (p2health <= 30)
+        {
         SceneManager.LoadScene(12);
+        p1health -= 6f;
+        special2 += 1f;
+        }
+        }
     }
 }

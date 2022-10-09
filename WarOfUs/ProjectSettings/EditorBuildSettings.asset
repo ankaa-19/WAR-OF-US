@@ -15,60 +15,69 @@ EditorBuildSettings:
     path: Assets/Scenes/suntukan p1.unity
     guid: a5e7c84c1b009f94a8e129d44da257c0
   - enabled: 1
-    path: Assets/Scenes/p1 hp.unity
+    path: Assets/Scenes/P1/p1 hp.unity
     guid: eb5249ad15ac45a45b71027e4681d290
   - enabled: 1
-    path: Assets/Scenes/p1 hk.unity
+    path: Assets/Scenes/P1/p1 hk.unity
     guid: 9639477bbab8c3a4588189d1c40d95d6
   - enabled: 1
-    path: Assets/Scenes/p1 lp.unity
+    path: Assets/Scenes/P1/p1 lp.unity
     guid: d46802130541f2d4eb24a8baa0b585a0
   - enabled: 1
-    path: Assets/Scenes/p1 lk.unity
+    path: Assets/Scenes/P1/p1 lk.unity
     guid: a3d101997ddc1a04dbd933a7f7b0c37c
   - enabled: 1
-    path: Assets/Scenes/p1 s.unity
+    path: Assets/Scenes/P1/p1 s.unity
     guid: 8e49057dbe3119d4a9b02b3e45d78024
   - enabled: 1
-    path: Assets/Scenes/p2 hp.unity
+    path: Assets/Scenes/P2/p2 hp.unity
     guid: 923a44ff961d3b0409128727f07f30c5
   - enabled: 1
-    path: Assets/Scenes/p2 hk.unity
+    path: Assets/Scenes/P2/p2 hk.unity
     guid: c4267710e98acea4bb481158be179c3f
   - enabled: 1
-    path: Assets/Scenes/p2 lp.unity
+    path: Assets/Scenes/P2/p2 lp.unity
     guid: 6bd99e79b4711ac41abd082fd623a1ea
   - enabled: 1
-    path: Assets/Scenes/p2 lk.unity
+    path: Assets/Scenes/P2/p2 lk.unity
     guid: 169cd1dc58407b74fa75edea24566ce7
   - enabled: 1
-    path: Assets/Scenes/p2 s.unity
+    path: Assets/Scenes/P2/p2 s.unity
     guid: b4b17e1e64de9664081e59fe902f4892
   - enabled: 1
-    path: Assets/Scenes/p1 hk miss.unity
+    path: Assets/Scenes/P1/p1 hk miss.unity
     guid: eb2f634569b57d44992743d8159e61e4
   - enabled: 1
-    path: Assets/Scenes/p1 lk miss.unity
+    path: Assets/Scenes/P1/p1 lk miss.unity
     guid: b4b86a8ec2b65294a8f5d187db87d9b8
   - enabled: 1
-    path: Assets/Scenes/p1 hp miss.unity
+    path: Assets/Scenes/P1/p1 hp miss.unity
     guid: c12a708f98461054b839b43513ddc8b0
   - enabled: 1
-    path: Assets/Scenes/p1 lp miss.unity
+    path: Assets/Scenes/P1/p1 lp miss.unity
     guid: f0ccbdf502dc7494c8b010525d4dc88f
   - enabled: 1
-    path: Assets/Scenes/p2 hk miss.unity
+    path: Assets/Scenes/P2/p2 hk miss.unity
     guid: d887bd2eeeb1eda489b6a49ef3741940
   - enabled: 1
-    path: Assets/Scenes/p2 lk miss.unity
+    path: Assets/Scenes/P2/p2 lk miss.unity
     guid: 4d107e7987b223e4abec83ab5d8e7dff
   - enabled: 1
-    path: Assets/Scenes/p2 hp miss.unity
+    path: Assets/Scenes/P2/p2 hp miss.unity
     guid: fe0e599ee2a77604d9e5fca5f1eaf3ff
   - enabled: 1
-    path: Assets/Scenes/p2 lp miss.unity
+    path: Assets/Scenes/P2/p2 lp miss.unity
     guid: aec456cc2697e554c9ba55fd6adfefb1
   - enabled: 1
     path: Assets/Scenes/ENDING.unity
     guid: b136deaf308c3544596c83693a26850a
+  - enabled: 1
+    path: Assets/Scenes/suntukan p2.unity
+    guid: a1b7b2b317a6b604d90502e2a87fda89
+  - enabled: 1
+    path: Assets/Scenes/P1/p1 winner.unity
+    guid: 123ef5eb3eb2be04ebffc5c9185d81e6
+  - enabled: 1
+    path: Assets/Scenes/P2/p2 winner.unity
+    guid: cbd0722ec26c5a54bacded05736ade41
   m_configObjects: {}

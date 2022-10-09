@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class timer : MonoBehaviour
+public class p1timer3s : MonoBehaviour
 {   
     public GameObject allfunctions;
 
@@ -18,7 +18,7 @@ public class timer : MonoBehaviour
     IEnumerator delayedchangescene()
     {
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(22);
         Destroy(allfunctions.gameObject);
     }
 }
