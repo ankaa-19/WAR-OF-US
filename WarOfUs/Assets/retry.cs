@@ -9,9 +9,11 @@ public class retry : MonoBehaviour
     public void RetryGame()
     {
         SceneManager.LoadScene(0);
+        PlayerPrefs.DeleteAll();
     }
     public void ExitGame()
     {
+        PlayerPrefs.DeleteAll();
         Application.Quit();
     }
 }

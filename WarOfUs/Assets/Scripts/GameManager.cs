@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
         p2health = PlayerPrefs.GetFloat("p2hp");
         p1max = PlayerPrefs.GetFloat("p1m");
         p2max = PlayerPrefs.GetFloat("p2m");
+        special1 = PlayerPrefs.GetFloat("spn1");
+        special2 = PlayerPrefs.GetFloat("spn2");
         healthcheck();
     }
 
@@ -30,6 +32,8 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("p2hn", p2health);
         PlayerPrefs.SetFloat("p1max", p1max);
         PlayerPrefs.SetFloat("p2max", p2max);
+        PlayerPrefs.SetFloat("sp1", special1);
+        PlayerPrefs.SetFloat("sp2", special2);
     }
 
 
@@ -94,7 +98,7 @@ public class GameManager : MonoBehaviour
         if (rand <= 65)
         {
             SceneManager.LoadScene(6);
-            p1health -= 6f;
+            p2health -= 6f;
         }
         else
         {
@@ -105,6 +109,10 @@ public class GameManager : MonoBehaviour
     public void p1s()
     {
         if(special1 >=1 )
+        {
+        
+        }
+        else
         {
         if(p1health <=30)
         {
@@ -176,10 +184,14 @@ public class GameManager : MonoBehaviour
     {
         if(special2 >= 1)
         {
+        
+        }
+        else
+        {
         if (p2health <= 30)
         {
         SceneManager.LoadScene(12);
-        p1health -= 6f;
+        p1health -= 25f;
         special2 += 1f;
         }
         }
